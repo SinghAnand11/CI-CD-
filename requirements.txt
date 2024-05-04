@@ -1,8 +1,9 @@
-﻿scikit-learn
+﻿python_version==3.10
+scikit-learn
 tensorflow
 numpy
 matplotlib
 keras
 seaborn
 black
-cml>=0.8.0
+cml
