@@ -4,3 +4,5 @@ numpy
 matplotlib
 keras
 seaborn
+black
+cml
