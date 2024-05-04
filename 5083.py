@@ -95,6 +95,9 @@ print("Recall:", recall)
 print("F1 Score:", f1)
 print("Confusion Matrix:\n", conf_matrix)
 
+with open("Results/metrics.txt", "w") as f:
+    f.write(f"F1 Score = {f1.round(2)}, Presicison: {precision.round(2)}, Recall: {recall.round(2)}, confusion matrix: {conf_matrix}")
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix
@@ -109,3 +112,4 @@ plt.xlabel('Predicted labels')
 plt.ylabel('True labels')
 plt.title('Confusion Matrix')
 plt.show()
+plt.savefig("Results/model_results.png", dpi=120)
