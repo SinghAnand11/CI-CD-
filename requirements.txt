@@ -5,4 +5,4 @@ matplotlib
 keras
 seaborn
 black
-cml
+cml>=0.8.0
