@@ -9,10 +9,10 @@ train:
 	python 5083.py
 
 eval:
-	echo "## Model Metrics" > report.md
-	cat metrics.txt >> report.md
+	echo "## Model Metrics" > readme.md
+	cat metrics.txt >> readme.md
    
-	echo '\n## Confusion Matrix Plot' >> report.md
-	echo '![Confusion Matrix](model_results.png)' >> report.md
+	echo '\n## Confusion Matrix Plot' >> readme.md
+	echo '![Confusion Matrix](model_results.png)' >> readme.md
    
-	cml comment create report.md
+	cml comment create readme.md
