@@ -15,4 +15,4 @@ eval:
 	echo '\n## Confusion Matrix Plot' >> results.md
 	echo '![Confusion Matrix](model_results.png)' >> results.md
    
-	cml comment create readme.md
+	cml comment create results.md
