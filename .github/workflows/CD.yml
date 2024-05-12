@@ -9,7 +9,7 @@ on:
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
-    needs: [ci]
+    needs: [CI]
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
