@@ -1,4 +1,4 @@
-name: Vercel Production Deployment
+name: CD_pipeline
 env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on:
@@ -8,7 +8,7 @@ on:
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
-    needs: [ CI_pipeline ]
+    needs: [CI_pipeline]
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
