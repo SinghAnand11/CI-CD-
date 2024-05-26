@@ -72,7 +72,7 @@ y_train, y_test = to_one_hot(y_train, y_test)
 x_train, x_val, y_train, y_val = train_test_split(x_train, y_train, test_size=0.1, random_state=42)
 
 # Fit the pipeline
-pipeline.fit(x_train, y_train, cnn_model__epochs=6, cnn_model__batch_size=32, cnn_model__validation_data=(x_val, y_val))
+pipeline.fit(x_train, y_train, cnn_model__epochs=5, cnn_model__batch_size=32, cnn_model__validation_data=(x_val, y_val))
 
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
